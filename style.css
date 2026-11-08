@@ -239,6 +239,14 @@ main p{
   border-bottom: 2px solid transparent;
   transition: color 200ms ease, background-color 200ms ease;
 }
+.topbar a:hover{
+  background-color: var(--hover-clr);
+  color: var(--text-clr);
+}
+.topbar a.active{
+  color: var(--accent-clr);
+  border-bottom-color: var(--accent-clr);
+}
 @media(max-width: 800px){
   body{
     grid-template-columns: 1fr;

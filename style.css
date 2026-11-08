@@ -17,7 +17,7 @@ html{
   line-height: 1.5rem;
 }
 html::-webkit-scrollbar{
-  width:6px;
+  width:0;
 }
 html::-webkit-scrollbar-track{
   background: transparent;
@@ -26,6 +26,8 @@ html::-webkit-scrollbar-thumb{
   background-color:transparent;
   border-radius:10px;
 }
+
+
 body{
   min-height: 100vh;
   min-height: 100dvh;
@@ -279,7 +281,7 @@ main p{
     border: none;
     padding: 0;
   }
-  #sidebar{
+  #sidebar, #sidebar.close{
     height: 60px;
     width: 100%;
     border-right: none;
@@ -288,6 +290,7 @@ main p{
     position: fixed;
     top: unset;
     bottom: 0;
+    overflow-y: hidden;
 
     > ul{
       padding: 0;

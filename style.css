@@ -216,14 +216,14 @@ main p{
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: var(--bar-clr);
+  background-color: var(--base-clr);
   border-bottom: 1px solid var(--line-clr);
 }
 .topbar ul{
   list-style: none;
   display: flex;
   gap: .25em;
-  padding: 0min(30px,7%);
+  padding: 0 min(30px, 7%);
   overflow-x: auto;
   scrollbar-width: none;
 }

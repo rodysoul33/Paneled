@@ -230,7 +230,15 @@ main p{
 .topbar ul::-webkit-scrollbar{
   display: none;
 }
-
+.topbar a{
+  display: block;
+  padding: .9em 1em;
+  color: var(--secondary-text-clr);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 200ms ease, background-color 200ms ease;
+}
 @media(max-width: 800px){
   body{
     grid-template-columns: 1fr;

@@ -104,6 +104,20 @@ body{
 #sidebar a span, #sidebar .dropdown-btn span{
   flex-grow: 1;
 }
+#sidebar .logo-item a{
+  justify-content: center;
+}
+#sidebar .logo-item img{
+  width: 100%;
+  max-width: 130px;
+  height: 38px;
+  object-fit: contain;
+  transition: width 300ms ease-in-out, height 300ms ease-in-out;
+}
+#sidebar.close .logo-item img{
+  width:24px;
+  height:24px;
+}
 #sidebar a:hover, #sidebar .dropdown-btn:hover{
   background-color: var(--hover-clr);
 }
@@ -236,5 +250,9 @@ main p{
     border-bottom:none;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  #sidebar .logo-item img{
+    width: 24px;
+    height: 24px;
   }
 }

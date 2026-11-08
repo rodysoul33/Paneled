@@ -37,7 +37,9 @@ body{
   top: 0;
   align-self: start;
   transition: 300ms ease-in-out;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
   text-wrap: nowrap;
 }
 #sidebar.close{
@@ -105,7 +107,25 @@ body{
   flex-grow: 1;
 }
 #sidebar .logo-item a{
+  flex-direction: column;
   justify-content: center;
+}
+#sidebar .logo-item .logo-label{
+  flex-grow: 0;
+  margin-top: .4em;
+  font-size: .8em;
+  line-height: 1.2;
+  text-align: center;
+  color:var(--secondary-text-clr);
+  max-height: 2em;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 300ms ease-in-out, max-height 300ms ease-in-out, margin-top 300ms ease-in-out;
+}
+#sidebar.close .logo-item .logo-label{
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
 }
 #sidebar .logo-item img{
   width: 100%;
@@ -254,5 +274,8 @@ main p{
   #sidebar .logo-item img{
     width: 24px;
     height: 24px;
+  }
+  #sidebar .logo-item a{
+    flex-direction: row;
   }
 }

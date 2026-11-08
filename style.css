@@ -219,7 +219,17 @@ main p{
   background-color: var(--bar-clr);
   border-bottom: 1px solid var(--line-clr);
 }
-
+.topbar ul{
+  list-style: none;
+  display: flex;
+  gap: .25em;
+  padding: 0min(30px,7%);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.topbar ul::-webkit-scrollbar{
+  display: none;
+}
 
 @media(max-width: 800px){
   body{

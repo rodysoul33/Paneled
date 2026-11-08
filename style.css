@@ -234,14 +234,21 @@ main p{
   flex: 1 0 auto;
 }
 .topbar a{
-  display: block;
+  display: flex;
+  align-items: center;
   padding: .9em 1em;
+  justify-content: center;
   color: var(--secondary-text-clr);
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   border-bottom: 2px solid transparent;
   transition: color 200ms ease, background-color 200ms ease;
+}
+.topbar a img{
+  height: 1.5rem;
+  width: auto;
+  display: block;
 }
 .topbar a:hover{
   background-color: var(--hover-clr);

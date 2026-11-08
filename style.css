@@ -31,6 +31,7 @@ body{
   padding: 5px 1em;
   background-color: var(--base-clr);
   border-right: 1px solid var(--line-clr);
+  
 
   position: sticky;
   top: 0;
@@ -43,6 +44,13 @@ body{
   padding: 5px;
   width: 60px;
 }
+#sidebar img{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 #sidebar ul{
   list-style: none;
 }
@@ -53,6 +61,16 @@ body{
   .logo{
     font-weight: 600;
   }
+}
+/*
+#sidebar > ul > li:last-child{
+  border-bottom: 1px solid white;
+}
+*/
+#sidebar li.divider{
+  border-bottom: 1px solid var(--line-clr);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 #sidebar ul li.active a{
   color:var(--accent-clr);
@@ -213,5 +231,10 @@ main p{
         justify-content: center;
       }
     }
+  }
+  #sidebar li.divider{
+    border-bottom:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }

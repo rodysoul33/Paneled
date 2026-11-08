@@ -39,8 +39,21 @@ body{
   transition: 300ms ease-in-out;
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-width: none;
+  
   text-wrap: nowrap;
+}
+#sidebar::-webkit-scrollbar{
+  width: 6px;
+}
+#sidebar::-webkit-scrollbar-track{
+  background: transparent;
+}
+#sidebar::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 10px;
+}
+#sidebar::-webkit-scrollbar-thumb:hover{
+  background-color: var(--accent-clr);
 }
 #sidebar.close{
   padding: 5px;

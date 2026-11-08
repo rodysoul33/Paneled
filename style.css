@@ -95,7 +95,7 @@ body{
   }
 }
 
-#sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
+#sidebar a, #sidebar .dropdown-btn /*, #sidebar .logo*/{
   border-radius: .5em;
   padding: .85em;
   text-decoration: none;

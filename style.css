@@ -209,6 +209,17 @@ main p{
 
   h2, p{margin-top: 1em}
 }
+.content{
+  min-width: 0;
+}
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bar-clr);
+  border-bottom: 1px solid var(--line-clr);
+}
+
 
 @media(max-width: 800px){
   body{
